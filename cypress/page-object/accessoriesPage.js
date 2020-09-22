@@ -13,7 +13,7 @@ class AccessoriesPage {
         return cy.get('input[aria-label="Search Google Store"]');
     }
 
-    performSearch(productToSearch) {
+     performSearch(productToSearch) {
         this.searchIcon.click();
         this.searchInput.type(`${productToSearch}{enter}`);
     }
